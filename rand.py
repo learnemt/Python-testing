@@ -8,13 +8,11 @@ try:
     only = []
     i = 0
     j = 0
-    sTime = eTime = 0.0
     if isOnly == 1:
         tempCount = da-xiao+1
         if number > tempCount:
             print("按唯一，数目不能少于da-xiao")
         else:
-            sTime = time.perf_counter()
             while i < number:
                 rand = random.randint(xiao, da)
                 appear = only.count(rand)  # 元素出现次数
@@ -31,11 +29,6 @@ try:
             i += 1
     else:
         print("outputError")
-    eTime = time.perf_counter()
-    # print(only)
-    # enumerate枚举类型，同时拿到下标和元素
-    # for x,i in enumerate(only):
-    #     print(x,i)
     print("\n随机名单如下：")
     print("-"*30)
     print("", end="\n")
@@ -44,6 +37,5 @@ try:
     print("\n")
     print("-"*30)
     print("\n多余重复次数：%d"%j,end="\n")
-    print("Running time：%s Seconds"%(eTime-sTime))
 except Exception as result:
     print("error:", result)
