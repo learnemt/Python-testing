@@ -32,10 +32,6 @@ try:
     else:
         print("outputError")
     
-    # print(only)
-    # enumerate枚举类型，同时拿到下标和元素
-    # for x,i in enumerate(only):
-    #     print(x,i)
     print("\n随机名单如下：")
     print("-"*30)
     print("", end="\n")
@@ -45,6 +41,6 @@ try:
     print("-"*30)
     print("\n多余重复次数：%d"%j,end="\n")
     eTime = time.perf_counter()
-    print("此次随机花费您Running time：%0.3f Seconds"%(eTime-sTime))# 0.3f保留三位
+    print("此次随机花费您Running time：%0.3f Seconds"%(eTime-sTime))
 except Exception as result:
     print("error:", result)
