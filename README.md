@@ -1,2 +1,2 @@
-# PyTest
+# Python testing
 random
